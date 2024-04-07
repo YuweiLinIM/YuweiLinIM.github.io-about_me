@@ -1,0 +1,700 @@
+<!doctype html> 
+<!DOCTYPE html>
+
+    
+<!--RESUME-->
+<body style="background-color:#ffffff">
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="index,follow" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<base href="https://www.w3schools.com/" target="_blank">
+		<title>RESUME</title>
+		
+<style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style>
+</head>
+
+<body><article id="ea7de1bc-35ff-4c2c-baeb-299b5d4a05c1" class="page sans"><header><h1 class="page-title"><strong>RESUME</strong></h1><p class="page-description"></p></header><div class="page-body"><div id="c5d38dce-8e51-4ef3-83ac-53c330122cb7" class="column-list"><div id="f89bee62-9d5c-4837-83f9-797b04227216" style="width:37.5%" class="column"><figure id="e381ed46-efa0-4b3e-b007-93658f5df82d" class="image"><a href="RESUME%20ea7de1bc35ff4c2cbaeb299b5d4a05c1/dba1f338-789a-4041-a37e-a1490802c6c0.png"><img style="width:248.25px height:248px" src="https://i.ibb.co/YtVXMy3/image.png" width="248.25" height="248"/></a></figure><h2 id="50ecd0b6-95dd-441a-bfd8-999a21bdc310" class="block-color-default"><mark class="highlight-default">                About me</mark></h2><p id="f1b9a1b2-0062-4964-8554-4ac65571a8fc" class="">姓名：林玉惟</p><p id="4e9ea933-fb12-4130-9d00-e7c5d95124d1" class="">TEL：0975-165-701</p><p id="02d75b5c-74c0-4099-8971-e2ad4cfff501" class="">年紀、性別：22歲 / 女性</p><p id="c9f3f373-3faa-4674-b9ca-5bc88f9cc2d3" class="">Gmail：<a href="mailto:p540540@gmail.com">p540540@gmail.com</a></p></div><div id="446a8de8-f03a-403b-afa7-4c85f184eacf" style="width:62.5%" class="column"><p id="d000069c-ae5e-43c9-8c48-f7e4fc8c450c" class="block-color-default">
+</p><p id="6f8d0ecf-4be7-48d0-af7f-922aec0b2f48" class="block-color-default">
+</p><h2 id="220d904b-05c7-43c4-b34b-86a8fa82303b" class="block-color-teal_background"><mark class="highlight-brown">| Education</mark></h2><p id="174e0bd4-d5a1-4a1e-a034-896bfe51aa47" class="">台北市立中正高中三類組畢業</p><p id="83e1d361-ed8b-49f6-a7a2-65b56ce6aede" class="">就讀東華大學資管系四年級</p><p id="bca1044c-302c-432a-8c39-99ee5428c5cb" class="">（預計 113 年畢業）</p><h2 id="6c4280a5-4436-4bc5-b5ab-d7b6c3ff7e08" class="block-color-teal_background"><mark class="highlight-brown">| Personality</mark></h2><ul id="81b63dd4-e39f-49da-969b-7c2f6ac685a6" class="bulleted-list"><li style="list-style-type:disc">邏輯清晰   </li></ul><ul id="bfe68745-3d2f-4693-8b72-db1fd50d0760" class="bulleted-list"><li style="list-style-type:disc">做事負責</li></ul><ul id="b8aa7ac9-2acd-4395-8be7-e55d39b65567" class="bulleted-list"><li style="list-style-type:disc">高抗壓性</li></ul><ul id="78e51e6c-eae4-41b2-b0e8-7c894e39875d" class="bulleted-list"><li style="list-style-type:disc">樂於學習</li></ul><p id="ec1d6812-1acc-4fb8-9c1d-39dbc89e5de1" class="">
+</p></div></div><h2 id="c0505b8a-6be7-4f78-8b19-02efe9f68ff3" class="block-color-teal_background"><mark class="highlight-brown">| Academic experience</mark></h2><ul id="f6b416ea-f8b1-477f-b8e4-24241dff64f3" class="toggle"><li><details><summary>畢業專案—社團資訊統整網 2022/9 - 2023/12（1.5學期）</summary><p id="a5dcd2fd-3fe9-48c5-ba70-c9aba172cf52" class="">在此專案中，我主要負責後端的環境建置、資料庫語法、協作臉書與IG的爬蟲語法。</p><p id="aab3801f-695e-424f-9a09-3f590e0955b4" class="">畢專我使用到的工具們：<div class="indented"><ul id="6aabfcd0-f3b1-402c-9071-d7e161428f20" class="bulleted-list"><li style="list-style-type:disc">Visual Studio Code（編寫演算法）</li></ul><ul id="ce4f7bb8-a49a-4812-bd9f-72c04d50fd88" class="bulleted-list"><li style="list-style-type:disc">TeamViewer（遠端控制研究室電腦，作為網路伺服器）</li></ul><ul id="1f94c2eb-1c98-4fef-aff9-8a75c1eba545" class="bulleted-list"><li style="list-style-type:disc">Xampp（我使用此架站工具整合包的 Apache 網頁伺服器與資料庫進行實驗階段的網站開發與測試）</li></ul></div></p><p id="881e2f20-a04d-484c-9764-2446a8232f10" class="">在畢專中我為後端組，主要有負責的事項為：<div class="indented"><ul id="c8ffea73-1fb8-404d-80b6-0319819dad0f" class="bulleted-list"><li style="list-style-type:disc">與前端組一同討論繪製 UI （後續由前端組在 figma 拉出展示介面）</li></ul><ul id="f946a381-0dbb-4f2f-8885-1776c0cad016" class="bulleted-list"><li style="list-style-type:disc">繪製系統環境圖、資料流程圖（DFD）<ul id="ac97974b-38a0-4545-bd08-b5da5e6f43c3" class="bulleted-list"><li style="list-style-type:circle">連結：<a href="https://docs.google.com/presentation/d/1p_xAt6oAvSM4H2390oo2abZFc28--3SPCIhiDlasiJI/edit#slide=id.g27e117d524f_0_173">https://docs.google.com/presentation/d/1p_xAt6oAvSM4H2390oo2abZFc28--3SPCIhiDlasiJI/edit#slide=id.g27e117d524f_0_173</a></li></ul></li></ul><ul id="4ab0b16e-6fa3-4d8d-a301-fdb2736a7a46" class="bulleted-list"><li style="list-style-type:disc">架設 Xampp 的伺服器環境，讓外部設備能連上我們的網站、連上資料庫</li></ul><ul id="27460a9a-ac7a-4664-aa1a-f8cc3c0c8446" class="bulleted-list"><li style="list-style-type:disc">協助使用 python 撰寫爬取臉書、IG貼文的爬蟲演算法（由隊友決定使用 scrape 套件進行爬蟲，我負責協助撰寫演算法，也套用了 python 的 schedule套件讓語法能每天自動執行抓取資料）</li></ul><ul id="961b1804-8b85-49aa-a7d4-d0e61655a44e" class="bulleted-list"><li style="list-style-type:disc">使用 Xampp 建置 mysql 資料庫</li></ul><ul id="d051a48c-f7c7-4f09-ab68-0afc7fdc5bf2" class="bulleted-list"><li style="list-style-type:disc">網站前後端之串接（把爬蟲得到的資料串接放進資料庫，把資料庫的資料串接放上前端頁面，用此方法搭配前述的動態爬蟲，使網頁呈現資料能夠每日動態更新）</li></ul><ul id="cd0a2880-0831-4b3e-b0ba-635f3ede60e3" class="bulleted-list"><li style="list-style-type:disc">製作口試簡報、在畢專發表會負責向各參與民眾介紹我們的畢專成果</li></ul></div></p></details></li></ul><ul id="ed1dc74f-1abd-4320-84d7-3ffad9a8c108" class="toggle"><li><details><summary>MIS網頁優化專案 2022/5</summary><p id="820b8acd-0462-4c7a-8469-f173fad1b745" class="">在大二下的MIS課程期末專案中，我的專案為幫 Biolove 進行網站優化，包含使用網站的 CMS 系統進行網站排版與內容的優化，改善顧客的使用者體驗，包含以下幾個項目。</p><ul id="92dd2fb5-e3da-4d39-ba37-ad582c166211" class="bulleted-list"><li style="list-style-type:disc">調整網站結構，讓使用者能一眼快速找到商品、購物車、聯絡表單。（優化前我與組員都較難發現商品頁與購物車在哪，需在網頁內點擊各連結尋找，因此顧客也難以在此網頁購買蛋糕）</li></ul><ul id="aea5c625-9698-4af5-ac56-ff13e1de1c47" class="bulleted-list"><li style="list-style-type:disc">編輯過於冗長與繽紛的文案，簡化內容、刪除各頁面過度重複的內容、列點呈現重點、搭配圖片呈現，改善讀者閱讀體驗</li></ul><ul id="f595624f-62f5-4df1-a3fb-75e183ddf522" class="bulleted-list"><li style="list-style-type:disc">在網站放入外部連結（包含顧客好評回饋、商家臉書、IG）</li></ul><ul id="d55559c2-c57e-4126-b732-02f1e8faeea2" class="bulleted-list"><li style="list-style-type:disc">把網站放上 GSC 和 GA</li></ul><ul id="b5b8f573-e09c-4adb-9433-4ae11244edd1" class="bulleted-list"><li style="list-style-type:disc">把meta title改成Biolove 重乳酪蛋糕</li></ul><ul id="2ecb72d3-64e6-4440-98a4-d29b3844dbd0" class="bulleted-list"><li style="list-style-type:disc">刪除過量的meta keyword並重設關鍵字</li></ul><ul id="d642ebac-a11d-4845-979b-b7f5fe88d3a2" class="bulleted-list"><li style="list-style-type:disc">改善meta discription，置入重要關鍵字</li></ul><ul id="a31b1420-f236-46bc-9ad3-39b188d7f06f" class="bulleted-list"><li style="list-style-type:disc">編輯各網站圖片的 Alt 替代文字</li></ul></details></li></ul><ul id="bf6d7fbc-80d3-40d8-97fb-0979975c3440" class="toggle"><li><details><summary>使用Wix練習製作蛋糕店之網站（大二下時製作）</summary><p id="4aeb268d-49ff-42e4-9ce0-90d3b3d83e35" class="">連結：<a href="https://p540540.wixsite.com/website">https://p540540.wixsite.com/website</a></p></details></li></ul><ul id="db7ce41f-fa33-48e0-95ba-11f61f6a6570" class="toggle"><li><details><summary>在學時做過的其他小專案簡報</summary><p id="ba9665a3-f963-4d50-897b-d9ae98e322da" class="">連結：<a href="https://docs.google.com/presentation/d/1Cqnv0obIz6L9EscNFFf02sZZeJyPlfw1xV9xDWDNmiY/edit#slide=id.g23da4129452_0_3170">https://docs.google.com/presentation/d/1Cqnv0obIz6L9EscNFFf02sZZeJyPlfw1xV9xDWDNmiY/edit#slide=id.g23da4129452_0_3170</a></p></details></li></ul><ul id="39d38254-61ac-4a34-ac3c-842fe221159b" class="toggle"><li><details><summary>個人自架的簡易履歷網站（大二下時自學製作）</summary><p id="3a32506b-e072-4474-b632-f98141b58817" class="">連結：<a href="https://yuweilinim.github.io/YuweiLinIM.github.io-about_me/">https://yuweilinim.github.io/YuweiLinIM.github.io-about_me/</a></p></details></li></ul><h2 id="861b5c2d-d48d-4eee-bc98-1c69902769db" class="block-color-teal_background"><mark class="highlight-brown">| Work Experience</mark></h2><ul id="782b01d3-6096-401a-b47d-05f649aeed94" class="toggle"><li><details><summary>於 EZTABLE 三二三網路科技股份有限公司實習，擔任執行長辦公室助理 2022/10 - 2023/10</summary><p id="93b9a05d-1420-40d3-8346-5375ba966801" class="">在擔任執行長助理期間，我主要協助執行長與行銷團隊作了以下事項。</p><ul id="f98183d3-cde6-4b17-ba8d-2e82dabfb5a5" class="bulleted-list"><li style="list-style-type:disc">使用了團購表單的 CMS 系統建置了販賣氣泡水的一頁式網站（目前網站已關閉）</li></ul><ul id="3691d6fc-88db-4361-b570-c774c1216592" class="bulleted-list"><li style="list-style-type:disc">撰寫品牌構面分析</li></ul><ul id="d7cbc817-a4e6-4b01-8cbc-4088a005c3bd" class="bulleted-list"><li style="list-style-type:disc">操作Insider、Firebase協助廣告曝光</li></ul><ul id="c88d8bc1-ad38-4d42-a3cc-3438fdca831b" class="bulleted-list"><li style="list-style-type:disc">撰寫和其他企業合作的廣告曝光月流量數據報表</li></ul><ul id="3c944ae9-3146-4bbd-b83b-4b7b82bbba15" class="bulleted-list"><li style="list-style-type:disc">做設計師所需軟體之調查（尋找有無功能與 Adobe 相近的產品可滿足設計師所需功能）</li></ul><ul id="80f6dcc1-fab6-49e3-a96c-9fe46dbfaa19" class="bulleted-list"><li style="list-style-type:disc">門禁系統更換專案（蒐集門禁系統廠商資料、跟老闆彙報、聯絡業務約時間 demo、和原本合作的門禁系統廠商聯絡確認過去合作事宜）</li></ul><ul id="e007ffc7-b20d-42a5-a599-3a839e6dc50c" class="bulleted-list"><li style="list-style-type:disc">清倉專案（和 FA 溝通資料陳列的方式、有哪些可丟棄文件、盤點需丟棄之 FA 資料、蒐集文件銷毀的公司資料並預約）</li></ul><ul id="6b9d181a-8a2e-438d-b364-06087ef4981d" class="bulleted-list"><li style="list-style-type:disc">空戰專案（專案目標為透過廣告投放，改變以往主動出擊找客戶的業務模式，由於我是遠端工作，並且不屬於業務部門，因此在這專案中我只負責當起頭帶動專案的角色，在 IG 與 Facebook 發布單篇廣告，起頭後便使用 google meet 進行軟體操作方式教學，轉給業務部門自行發展）<ul id="a15230ec-d85d-440d-9dba-6ac91b372834" class="bulleted-list"><li style="list-style-type:circle">我寫過的Meta廣告貼文連結：<a href="https://docs.google.com/document/d/1hqPi6i1HNP3JaXelsXPMJGV1hK2JbKux7fztrD6C1_E/edit">https://docs.google.com/document/d/1hqPi6i1HNP3JaXelsXPMJGV1hK2JbKux7fztrD6C1_E/edit</a></li></ul></li></ul></details></li></ul><ul id="b5b3cbbe-a4ab-45f2-b18d-f9eee8fbc880" class="toggle"><li><details><summary>於台灣農業科技資源運籌管理學會擔任活動企劃推廣助理（公部門暑期實習） 2022/7 - 2022/8</summary><p id="6731b26d-ab89-4811-8358-5873e755b0ab" class="">在學會實習期間，學習了如何撰寫臉書貼文、以及協助各項籌辦活動事宜。而主管因為我是資管系學生，也讓我學習使用 GA 、閱讀 GA 報表，和使用 Wix 製作行動版網站。</p><ul id="3fd843b2-89aa-4e9c-819c-828b82a6da51" class="bulleted-list"><li style="list-style-type:disc">過去撰寫過的臉書貼文連結：<a href="https://docs.google.com/spreadsheets/d/11rocq8h3s80bTxcnxYXq7UIDzdbN0Xwj60UVX2SL9Yc/edit#gid=0">https://docs.google.com/spreadsheets/d/11rocq8h3s80bTxcnxYXq7UIDzdbN0Xwj60UVX2SL9Yc/edit#gid=0</a></li></ul><ul id="ff49b6e5-d8b3-4bca-bcdd-0ccd561c462a" class="bulleted-list"><li style="list-style-type:disc">使用Wix製作鳳梨產業策略聯盟的行動版網站連結：<a href="https://public353.wixsite.com/tpia">https://public353.wixsite.com/tpia</a></li></ul></details></li></ul><ul id="8a121a74-dc84-4f62-8ff2-5d1d1d885323" class="toggle"><li><details><summary>於台灣農業科技資源運籌管理學會擔任農業領域行政助理人員（公部門暑期實習)）2023/7 - 2023/8</summary><p id="993dd32c-48fe-4488-8ce6-c2d4ba83ce0b" class="">由於前次實習表現良好，老闆在 2023 年邀請我再次回去工作，參與學會專案執行。</p><p id="b98e8717-b216-4959-8774-60584316940a" class="">而這次在學會擔任行政助理期間，我主要協助了以下事項。</p><ol type="1" id="b66ea8f2-d7c2-4d1c-b002-d6d2df2abbe7" class="numbered-list" start="1"><li>【廢棄菇包專案】電話訪談 49 個業者的營運現況，並針對訪談結果協助撰寫整合性分析報告 1 份</li></ol><ol type="1" id="5e1cf0ff-fc49-444d-a7c9-e1d4adf60ded" class="numbered-list" start="2"><li>【地瓜桌遊專案】我與另一位實習生合作，協力產出企劃、初步試玩、企劃校正、設計遊戲配件（紙卡、牌卡），到最後印出展示品。<ol type="a" id="ba0dda66-0b12-431d-b333-83a46fb8a7ac" class="numbered-list" start="1"><li><a href="https://www.canva.com/design/DAFsiswFPDI/mn5gJCGb8dSGSIYtgmYklg/view?utm_content=DAFsiswFPDI&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">機會牌卡(好) 的複本 (canva.com)</a></li></ol><ol type="a" id="241cd2fb-bd3c-49a5-a455-04e4a359bca0" class="numbered-list" start="2"><li><a href="https://www.canva.com/design/DAFsiphUOwE/1hm4g_2HS4YQ7yGamzSqXg/view?utm_content=DAFsiphUOwE&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">機會牌卡(壞) 的複本 (canva.com)</a></li></ol><ol type="a" id="e639fda1-e465-4751-8118-1f6f04edf0f6" class="numbered-list" start="3"><li><a href="https://www.canva.com/design/DAFqQYovn34/p5mx_a8DF6mZKNLQrbqHVA/view?utm_content=DAFqQYovn34&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=publishsharelink">農地卡 (canva.com)</a></li></ol><ol type="a" id="0cb14986-9e4b-4ac6-8974-c45b4f07ad77" class="numbered-list" start="4"><li><a href="https://www.canva.com/design/DAFp4kaEwp0/1CHVWcLZjF30pUqntKkLIw/view?utm_content=DAFp4kaEwp0&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=publishsharelink">技術牌卡 (canva.com)</a></li></ol><ol type="a" id="352b7ce4-425f-4635-80bd-1e572b479912" class="numbered-list" start="5"><li><a href="https://www.canva.com/design/DAFp4noWgcI/rSxnSwDPgfQ8znkKle93qA/view?utm_content=DAFp4noWgcI&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=publishsharelink">收支紀錄表 (canva.com)</a></li></ol><ol type="a" id="32c77276-5723-425b-9d6b-0e17645dd1bd" class="numbered-list" start="6"><li><a href="https://www.canva.com/design/DAFqL-tWo_A/3ZAa_88U5eClRO4ZeVUS7A/view?utm_content=DAFqL-tWo_A&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">田區紙卡A3 (canva.com)</a></li></ol><ol type="a" id="60e388ed-363b-41ea-ac11-740eb19e0719" class="numbered-list" start="7"><li><a href="https://www.canva.com/design/DAFpynm1ADA/8wBsej9cRpl9oBrTXdZJ1A/view?utm_content=DAFpynm1ADA&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=publishsharelink">田園裡的甘藷，挖呀挖呀挖_桌遊規則書 (canva.com)</a></li></ol></li></ol><ol type="1" id="bee28c4e-e82e-460c-9e72-5104a6b074ec" class="numbered-list" start="3"><li>協助做各活動的行前電訪通知，與準備活動備品</li></ol><ol type="1" id="383e2b2f-96a0-41e8-85e1-f3f97e4c9715" class="numbered-list" start="4"><li>參與各專案活動辦理，擔任工作人員（工作內容包含接駁、展場布置、簽到等）</li></ol><p id="0b169e7b-ca67-42ab-b7a5-6af60e056d37" class="">而以下連結為此次實習的結案報告，內有介紹我們的工作內容。</p><p id="988f52cc-2799-4545-ac37-216e38b546da" class=""><a href="https://drive.google.com/file/d/1INNePOI82QLS2vZvnQ6zzMmhip7t1EyP/view">【運籌管理學會】112年暑工成果競賽作品.pdf - Google 雲端硬碟</a></p></details></li></ul><ul id="5405b8f0-4df7-4d4f-afcf-9121692c1c7e" class="toggle"><li><details><summary>於在海邊數據行銷有限公司擔任兼職人員 2021/11 - now （公司為 112 年 5 月成立，而我是在公司成立前加入成為合作夥伴）</summary><p id="7fe6951f-737b-45f8-ab9e-e3f3f4276eb5" class="">在公司我過去曾經負責：</p><ol type="1" id="78c1692b-31bf-4949-9ce3-998dd7a3c3af" class="numbered-list" start="1"><li>撰寫 SEO 內容行銷文章<p id="4ceb62d7-967e-4cd2-a140-cf0101042945" class="">文章作品集連結：<a href="https://docs.google.com/spreadsheets/d/1GA-c6eiYvM75XHRJAqazbRFCkg8lIKpwxoFAggSPzQU/edit#gid=0">https://docs.google.com/spreadsheets/d/1GA-c6eiYvM75XHRJAqazbRFCkg8lIKpwxoFAggSPzQU/edit#gid=0</a></p></li></ol><ol type="1" id="4389c83c-ac08-4745-beb6-efde4169ff3e" class="numbered-list" start="2"><li>製作 SEO 成效數據月報表</li></ol><ol type="1" id="ce04ce95-a6e2-4e56-b639-eb3f447801aa" class="numbered-list" start="3"><li>審閱新加入寫手的文章，提出建議與寫手溝通，使其文章能更符合 SEO 格式規範、提升內容品質。</li></ol><ol type="1" id="10074262-143f-4ae7-9365-e825ead5a697" class="numbered-list" start="4"><li>主題關鍵字之開立</li></ol><p id="6d422c43-8e2c-41e4-a44e-47ed16610693" class="">在撰寫 SEO 文章的過程，讓我學習到基礎行銷文章應有的要件，也培養了邏輯思維能力，運用於 SEO 文章的架構上。此外，在撰寫文章半年後，由於個人撰寫的文章品質穩定，因此從 2022 年  5 月起，也開始擔任助教，協助主管審閱其他寫手的文章。而在撰寫 SEO 文章滿一年後，我也開始使用 GSC 和 GA ，觀看網站的流量數據，與各關鍵字的流量成長數據，撰寫給予客戶觀看的成效報表，其中包含簡單的數據分析，會由數據判讀關鍵字之行銷成效，進一步給予客戶下個月的網站內容優化建議。</p></details></li></ul><ul id="2b3218fc-9494-4dbe-8730-7441a52c912e" class="toggle"><li><details><summary>在古拉爵擔任服務生 2020/2 - 2020/9</summary><p id="64724432-8c10-49bd-bb37-a603307329aa" class="">在擔任服務生期間，我開始學習如何跟不同客人溝通、跟客人介紹餐廳特色和餐點，也在快步調的餐廳中，學會靈機應變與做事效率最大化。在擔任服務生期間，我自認我最擅長的事情是推銷店裡的餅乾、月曆等品牌商品，過去總公司對各分店的要求是希望一天賣至少六包餅乾，相較同事一天只賣一兩包，我經常一個人一天就能賣掉六包，我認為一部分原因是我非常善於找出商品的優點，並對不同受眾採不同的推銷方式，比如店內曾經賣過西式手工餅乾，我在面對年長族群與帶小孩的爸媽時，我會翻出成分表，告訴對方這款餅乾成分簡單易懂、無添加棕櫚油、健康美味等。而面對年輕族群時，我會更多跟對方強調這款餅乾的美味程度，還有適合搭配哪些茶飲、咖啡等。</p></details></li></ul><ul id="80f9780e-f2d4-41d7-9de0-f1f1a102ec50" class="toggle"><li><details><summary>擔任數位學伴 2020/11 - 2020/12</summary><p id="975c0402-bf7f-4e96-9c80-de44c9a1b217" class="">運用線上平台，遠距離教導國一學生數學，嘗試將有趣的各式數學謎題帶入課程討論中，誘發小朋友主動參與和思考。</p></details></li></ul><ul id="8ae24121-14e5-47e9-b517-24cbee71bfb4" class="toggle"><li><details><summary>在飲料店打工 2020/11 - 2022/6</summary><p id="c60f4afd-ad35-4196-af0b-0f46f5695135" class="">一邊打工一邊讀書，讓我養成了列出代辦清單，仔細規畫時間、善用時間的好習慣。</p></details></li></ul><h2 id="374cf048-b891-4b51-8066-a945c51788df" class="block-color-teal_background"><mark class="highlight-brown">| Skills</mark></h2><ul id="54c8fa3d-a690-4e52-898e-74c0747cd2c3" class="bulleted-list"><li style="list-style-type:disc">繪製系統分析圖</li></ul><ul id="852cf191-91d3-41ed-a6b7-0304659e9f1c" class="bulleted-list"><li style="list-style-type:disc">具備基礎 HTML 、 CSS 和 JS 的語法概念，能做出基礎運用，打造網站</li></ul><ul id="cc84c565-0791-4067-bbdd-084f89d33948" class="bulleted-list"><li style="list-style-type:disc">會使用Wix平台建構網站</li></ul><ul id="7c862e80-c962-4548-b024-ad666a670923" class="bulleted-list"><li style="list-style-type:disc">Word、Powerpoint、Excel 等文書軟體操作能力</li></ul><ul id="33713d66-90ef-42e7-a235-ddd9e6f4f823" class="bulleted-list"><li style="list-style-type:disc">SEO 行銷文案撰寫能力</li></ul><ul id="bade0030-ac87-4638-83d0-9deb5e0b77e1" class="bulleted-list"><li style="list-style-type:disc">操作 CMS 內容管理系統能力，比如曾使用WebMake、QDM、團購表單</li></ul><ul id="abe29661-f4eb-4911-a9f1-54bf385cdff2" class="bulleted-list"><li style="list-style-type:disc">使用行銷平台 Insider 、雲端開發平台 Firebase 、 Google Ads 、 Meta 廣告管理員投放廣告</li></ul><h2 id="b8d7ec14-a355-4a77-aabb-2c9df48da9b3" class="block-color-teal_background"><mark class="highlight-brown">| Portfolios</mark></h2><ul id="41a72e65-3984-41ed-af76-a2af536ddc76" class="bulleted-list"><li style="list-style-type:disc">使用Wix製作鳳梨產業策略聯盟的行動版網站（在運籌管理學會擔任企劃部助理時製作）<br/><a href="https://public353.wixsite.com/tpia">https://public353.wixsite.com/tpia</a></li></ul><ul id="45f85d44-aef1-4ed4-8f37-9b2081ae31e2" class="bulleted-list"><li style="list-style-type:disc">使用Wix練習製作蛋糕店之網站（大二下時製作）<br/><a href="https://p540540.wixsite.com/website">https://p540540.wixsite.com/website</a></li></ul><ul id="079c7079-fa15-414e-b5e7-b47c14019167" class="bulleted-list"><li style="list-style-type:disc">個人自架的簡易履歷網站（大二下時製作）<br/><a href="https://yuweilinim.github.io/YuweiLinIM.github.io-about_me/">https://yuweilinim.github.io/YuweiLinIM.github.io-about_me/</a></li></ul><ul id="4aff8920-905c-46b5-be64-e0476ac6364a" class="bulleted-list"><li style="list-style-type:disc">SEO內容行銷文案作品集<br/><a href="https://docs.google.com/spreadsheets/d/1GA-c6eiYvM75XHRJAqazbRFCkg8lIKpwxoFAggSPzQU/edit#gid=0">https://docs.google.com/spreadsheets/d/1GA-c6eiYvM75XHRJAqazbRFCkg8lIKpwxoFAggSPzQU/edit#gid=0</a></li></ul><ul id="49e1eb86-eb41-42ef-a666-5494efaa0a5c" class="bulleted-list"><li style="list-style-type:disc">過去撰寫過的臉書貼文（在運籌管理學會擔任企劃部助理時製作）<br/><a href="https://docs.google.com/spreadsheets/d/11rocq8h3s80bTxcnxYXq7UIDzdbN0Xwj60UVX2SL9Yc/edit#gid=0">https://docs.google.com/spreadsheets/d/11rocq8h3s80bTxcnxYXq7UIDzdbN0Xwj60UVX2SL9Yc/edit#gid=0</a></li></ul><ul id="41e5b7d4-88ba-4563-8f48-8debfad0ec8a" class="bulleted-list"><li style="list-style-type:disc">我寫過的Meta廣告貼文（曾經投過的google關鍵字因為涉及公司隱私問題所以無法提供）<br/><a href="https://docs.google.com/document/d/1hqPi6i1HNP3JaXelsXPMJGV1hK2JbKux7fztrD6C1_E/edit">https://docs.google.com/document/d/1hqPi6i1HNP3JaXelsXPMJGV1hK2JbKux7fztrD6C1_E/edit</a></li></ul><ul id="2e42066d-ec20-40ef-8166-1653038f9e34" class="bulleted-list"><li style="list-style-type:disc">修習系統分析時所畫的系統分析圖<p id="d4a46ca3-0670-4e40-9eed-b6bf2ed7bedc" class=""><a href="https://docs.google.com/presentation/d/1p_xAt6oAvSM4H2390oo2abZFc28--3SPCIhiDlasiJI/edit#slide=id.g27e117d524f_0_173">https://docs.google.com/presentation/d/1p_xAt6oAvSM4H2390oo2abZFc28--3SPCIhiDlasiJI/edit#slide=id.g27e117d524f_0_173</a></p></li></ul><h2 id="a5ec8a17-47b5-4d66-b221-0c92aacd51bd" class="block-color-teal_background"><mark class="highlight-brown"><strong>| Autobiography</strong></mark></h2><p id="e207ad41-29e0-4e16-ac6a-8291578cad8d" class="">我是<strong>東華大學資管四</strong>的林玉惟，就讀中正高中三類組畢業，由於家境因素，我從高三起就在義式餐廳打工，<strong>大一時也在飲料店打工，與兼職數位學伴教導國中生數學</strong>，後來大一下時疫情爆發，我因為失業，了解到勞力工作有其風險，又考量我過去學習經驗中國文是我最擅長的科目，因此決心要至少擁有一份可遠端的文字工作。</p><p id="7852c972-2ff7-4b33-bc92-6fec3fd6a29b" class="">大一暑假我便<strong>開始閱讀文案教學書籍</strong>，比如逼人買到剁手指的77個文案促購技巧，也開始<strong>嘗試自己寫一些文章</strong>，比如這篇：<a href="https://weiwei14.pixnet.net/blog/post/48368512">咖啡甜點控必收的口袋名單！士林 | 流浪觀點 | Vagabond Cafe @ Wei的生活分享 :: 痞客邦 :: (pixnet.net)</a>。</p><p id="caa9cfcf-3030-49d5-bed9-f87ad664e918" class="">後來就成功加入在海邊行銷公司，成為寫手之一，因此<strong>大二時我同時在飲料店打工與兼職當寫手</strong>，那時候深刻了解到自己的就業競爭力太過薄弱，因此即使已經<strong>修了 23 學分外加兩份工作</strong>，<strong>課外我也堅持排時間進修不同技能與知識</strong>，包含：電腦組成架構、前端後端基本知識、Excel、HTML、CSS、SQL、簡報製作、履歷製作、面試技巧等等，在忙碌的生活中，<strong>每周日我都會先列出代辦清單，規劃出我的每周行程，確保自己能有效率、條理地完成每個任務。</strong></p><p id="cfcd1a53-b92b-4a10-a86e-76d4e3853294" class="">身邊的人對我的印象都是做事負責有條理、個性有條不紊，在過去的工作經驗中，<strong>雇主一致認為我是做事認真負責的員工。</strong></p><p id="0758bba5-0b21-46e7-bc09-59e07dce3454" class="">而我認為<strong>我一向樂於學習與挑戰，平時的休閒興趣是嘗試自己沒做過與學過的事情</strong>，目前對自己的要求是每三個月都要至少學習一件新事物，以下是我在大學的學習經歷。</p><ul id="551715fc-41d3-4af5-a8d4-2a75061c4ee7" class="bulleted-list"><li style="list-style-type:disc">大一上我參加了數位學伴的活動，接受相關教育訓練，實作生產出教導國一學生數學課程的教案。由於入住宿舍開始擁有屬於自己的小空間，我喜歡上看各種房間布置改造的節目，也開始學習簡單的房間收納、裝飾技巧，來優化生活空間。</li></ul><ul id="37a279ea-d16a-42fd-9914-46eb9e599d79" class="bulleted-list"><li style="list-style-type:disc">大一下我加入柔道社，學習護身、掌控身體重心與摔倒對手的技能。也寫了奇萊文訊的系刊（偏鄉教育篇），第一次正式接觸文案。</li></ul><ul id="cd4e1ccc-3626-470d-bdd5-ae3d605464d5" class="bulleted-list"><li style="list-style-type:disc">寒暑假期間，我閱讀商業書籍，學習行銷知識、文案撰寫，以及其他商業知識，比如77個文案促購技巧、倒金字塔說話術、內容感動行銷等書。</li></ul><ul id="33b1d69f-3aaf-4985-8255-6c26296ee961" class="bulleted-list"><li style="list-style-type:disc">大二上時，參與了SEO的訓練課程並正式成為寫手，也學習電腦組成架構、硬體基礎知識、前後端基礎知識、Excel、SQL、簡報製作等等。</li></ul><ul id="1c7b0e1e-1ccc-4fc9-b6dd-c1679afed0cb" class="bulleted-list"><li style="list-style-type:disc">大二下學習了茶藝與手沖咖啡，也有自學架設網站的相關基礎知識，包含前端三本柱html、css、java script，並以個人的履歷網站為題練習實作。而為了暑假的工作機會，我也花時間學習了履歷製作、面試技巧等等。</li></ul><ul id="d63c1c78-0281-4600-a26c-cb5c7617bba1" class="bulleted-list"><li style="list-style-type:disc">大三時我開始製作畢專，學習使用 figma 繪製 UI 、python 的 Scrape 套件、Schedule 套件等。有空時也會上 hahow 跟 youtube 上各式免費課程，像是機器學習、商業攝影等等。</li></ul><ul id="3a51f89b-0677-4be6-93bc-dba253bd0fe9" class="bulleted-list"><li style="list-style-type:disc">大四上我完成了畢專與大部分畢業學分後，大四下目前正著重在感受生活，休閒時我自學指甲的前置保養、自己施作凝膠甲貼、編織手機掛繩等，也去參加市集、燈會、逛風景區等等，體驗各種未嘗試過的新事物，並重拾過去長跑和運動的習慣，排解壓力、維持身體健康。未來也打算在網路上探索更多學習資源，學習攝影、資安、投資等等。</li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span>
+</body>
+</html>
